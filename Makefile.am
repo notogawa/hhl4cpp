@@ -1,0 +1,11 @@
+ACLOCAL_AMFLAGS=\
+-I m4
+
+if HAVE_CUTTER
+TEST_WITH_CUTTER=test
+endif
+
+SUBDIRS=\
+include \
+sample \
+$(TEST_WITH_CUTTER)
